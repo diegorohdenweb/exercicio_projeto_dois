@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Médias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="grid-container space_top_quarenta">
+            <div class="grid-x grid-padding-x">
+                <div class="medium-1 large-1 cell">
+                    <img src="img/logo.png">
+                </div>
+                <div class="medium-11 large-11 cell">
+                    <h1>Agenda de Contatos</h1>
+                </div>
+            </div>
+    </header>
+
+    <div class="grid-container space_top_quarenta">
+        <div class="grid-x grid-padding-x">
+            <div class="medium-12 large-12 cell">
+
+                <form id="form-agenda">
+                    <div class="grid-x grid-padding-x">
+                        <div class="medium-3 large-3 cell">
+                            <input type="text" id="nome-contato" required placeholder="Nome do Contato">
+                        </div>
+
+                        <div class="medium-3 large-3 cell">
+                            <input type="tel" id="tel-contato" required placeholder="Qual o telefone/celular" onkeyup="handlePhone(event)">
+                        </div>
+                        <div class="medium-3 large-3 cell">
+                            <input type="text" id="endereco-contato" required placeholder="Qual o CEP">
+                        </div>
+                        <div class="medium-3 large-3 cell">
+                            <button type="submit">Cadastrar +</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="grid-x grid-padding-x space_top_quarenta text-center">
+            <div class="medium-5 large-5 cell">
+                <p><b>Nome do Contato</b></p>
+            </div>
+            <div class="medium-5 large-5 cell">
+                <p><b>Telefone/Celular</b></p>
+            </div>
+            <div class="medium-2 large-2 cell">
+                <p><b>CEP</b></p>
+            </div>
+        </div>
+
+        <content>
+            
+        </content>
+
+
+        <div class="grid-x grid-padding-x space_top text-center">
+            <div class="medium-5 large-5 cell">
+                <p id="nome=contato"></p>
+            </div>
+            <div class="medium-5 large-5 cell">
+                <p id="telefone-contato"></p>
+            </div>
+            <div class="medium-2 large-2 cell">
+                <p id="cep-contato"></p>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
